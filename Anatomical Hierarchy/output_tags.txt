@@ -1,0 +1,421 @@
+abducens nucleus
+acoustic radiation
+alveus
+ambiguus nucleus
+amiculum of the olive
+amygdala
+amygdalohippocampal area
+amygdalohippocampal area magnocellular division
+amygdalohippocampal area marginal layer
+amygdalohippocampal area parvocellular division
+amygdalohippocampal transition zone
+angular bundle
+angular gyrus
+angular gyrus inferior bank of gyrus
+angular gyrus superior bank of gyrus
+ansa lenticularis
+ansa peduncularis
+anterior amygdaloid area
+anterior amygdaloid area dorsal division
+anterior amygdaloid area ventral division
+anterior commissure
+anterior hypothalamic nucleus
+anterior hypothalamic region
+anterior lobe
+anterior lobe of the vermis
+anterior olfactory nucleus
+anteroventral periventricular nucleus
+arcuate fasciculus
+area postrema
+basal forebrain
+basal ganglia
+basal nucleus of meynert
+bed nucleus of stria terminalis
+body of the fornix
+brain
+bundle x
+caudal spinal trigeminal nucleus
+caudal spinal trigeminal nucleus gelatenous part
+caudal spinal trigeminal nucleus magnocellular part
+caudal spinal trigeminal nucleus zonal part
+central tegmental tract
+cerebellar cortex
+cerebellar hemispheres
+cerebellar white matter tracts
+cerebellum
+cerebral cortex
+cerebral nuclei
+cerebral peduncle (crus cerebri)
+choroid plexus of the fourth ventricle
+choroid plexus of the third ventricle
+claustrum
+cochlear nuclei
+comb fibers
+corpus callosum
+corticobulbar tract
+corticobulbar tract midbrain portion
+corticobulbar tract supracapsular part
+corticospinal tract
+cranial nerves
+crus i
+crus i lateral hemisphere
+crus i paravermis
+crus ii
+crus ii lateral hemisphere
+crus ii paravermis
+cuneate fasciculus
+cuneate nucleus
+cuneiform nucleus
+cuneus
+cuneus peristriate
+cuneus striate
+decussation of medial lemniscus
+deep gray layer of the superior colliculus
+deep white layer of the superior colliculus
+diencephalon
+dorsal cochlear nucleus
+dorsal lateral geneiculate nucleus
+dorsal lateral geniculate nucleus
+dorsal lateral geniculate nucleus magnocellular layers
+dorsal lateral geniculate nucleus parvocellular layers
+dorsal lateral geniculate nucleus s and intercalated layers
+dorsal nucleus of lateral lemniscus
+dorsal periventricular nucleus
+dorsal raphe nucleus
+dorsal raphe nucleus dorsal part
+dorsal raphe nucleus interfascicular part
+dorsal raphe nucleus raphe cap
+dorsal raphe nucleus ventral part
+dorsal tegmental nucleus
+dorsal thalamus
+dorsomedial hypothalamic nucleus
+dorsomedial hypothalamic nucleus compact part
+dorsomedial hypothalamic nucleus diffuse part
+dorsomedial tegmental area
+endolemniscal nucleus
+epifascicular nucleus
+epithalamus
+external (accessory/lateral) cuneate nucleus
+external capsule
+external medullary lamina of globus pallidus
+external sagittal stratum
+extreme capsule
+fimbria
+flocculonodular lobe
+flocculonodular lobe of the vermis
+fornix
+fourth ventricle
+frontal lobe
+frontal operculum
+frontal pole
+frontal pole inferior aspect
+frontal pole medial aspect
+frontal pole superior aspect
+gigantocellular group
+gracile fasciculus
+gracile nucleus
+gray matter
+habenular commissure
+habenular nuclei
+hilus of the inferior olive
+hippocampal commissure
+hippocampal formation
+hypoglossal nucleus
+hypothalamus
+i ii
+i ii lateral hemisphere
+i ii paravermis
+iii
+iii lateral hemisphere
+iii paravermis
+indusium griseum
+inferior cerebellar peduncle
+inferior frontal gyrus
+inferior longitudinal fasciculus
+inferior occipital gyrus
+inferior occipital gyrus inferior bank of gyrus
+inferior occipital gyrus superior bank of gyrus
+inferior parietal lobule
+inferior temporal gyrus
+inferior temporal gyrus bank of mts
+inferior temporal gyrus bank of the its
+inferior temporal gyrus lateral bank of gyrus
+inferior thalamic peduncle
+insula
+interfascicular nucleus
+intermediate hypothalamic nuclei
+intermediate nucleus of lateral lemniscus
+internal arcuate fibers
+internal capsule
+internal medullary lamina of globus pallidus
+internal medullary lamina of thalamus
+internal sagittal stratum
+interpeduncular nucleus
+interpolar part of spinal trigeminal nucleus
+interpositus nucleus
+interstitial nucleus of cajal
+islands of calleja
+isthmic reticular formation
+iv
+iv lateral hemisphere
+iv paravermis
+ix
+ix lateral hemisphere
+ix paravermis
+lateral habenular nucleus
+lateral habenular nucleus magnocellular division
+lateral habenular nucleus parvocellular division
+lateral lemniscus
+lateral mammillary nucleus
+lateral nucleus
+lateral nucleus dorsal anterior division
+lateral nucleus dorsal division
+lateral nucleus dorsal lateral division
+lateral nucleus dorsal lateral division comb like part
+lateral nucleus dorsal medial division
+lateral nucleus glomerular division
+lateral nucleus intermediate division
+lateral nucleus ventral division
+lateral nucleus ventral lateral division
+lateral nucleus ventral medial division
+lateral orbital gyrus
+lateral parabrachial nucleus
+lateral paragigantocellular nucleus
+lateral preoptic area
+lateral superior olivary nucleus
+lateral vestibular nucleus
+lenticular fasciculus
+limbic lobe
+lingual gyrus
+lingual gyrus peristriate
+lingual gyrus striate
+long insular gyri
+longitudinal fasciculus of the pons
+magnocellular part of the red nucleus
+mammillary body
+mammillary peduncle
+mammillary region
+mammillotegmental tract
+mammillothalamic tract
+medial forebrain bundle
+medial habenular nucleus
+medial lemniscus
+medial longitudinal fasciculus
+medial mammillary nucleus
+medial mammillary nucleus basal division
+medial mammillary nucleus lateral part
+medial mammillary nucleus medial part
+medial orbital gyrus
+medial parabrachial nucleus
+medial pericuneate nucleus
+medial preoptic area
+medial preoptic nucleus
+medial preoptic nucleus central part
+medial preoptic nucleus lateral part
+medial preoptic nucleus medial part
+medial septal nucleus
+medial superior olivary nucleus
+medial vestibular nucleus
+median eminence
+median preoptic nucleus
+medullary reticular formation
+mesencephalic trigeminal tract
+mesencephalic white matter
+mesencephalon
+metencephalic white matter
+metencephalon
+meyer's loop of optic radiation
+midbrain raphe nuclei
+midbrain reticular formation
+midbrain tectum
+midbrain tegmentum
+middle cerebellar peduncle
+middle frontal gyrus
+middle frontal gyrus inferior bank of gyrus
+middle frontal gyrus superior bank of gyrus
+middle gray layer of the superior colliculus
+middle longitudinal fasciculus
+middle temporal gyrus
+middle temporal gyrus inferior bank of gyrus
+middle temporal gyrus superior bank of gyrus
+middle white layer of the superior colliculus
+motor nucleus of trigeminal nerve
+myelencephalic white matter
+myelencephalon
+nucleus of darkschewitsch
+nucleus of roller
+nucleus of the optic tract
+nucleus of the pretectal area
+nucleus pararaphales
+occipital lobe
+occipital pole
+occipital pole inferior aspect
+occipital pole lateral aspect
+occipital pole superior aspect
+olfactory tubercle
+olivary pretectal nucleus
+optic chiasm
+optic nerve
+optic tract
+oral part of spinal trigeminal nucleus
+orbito polar tract
+parabigeminal nucleus
+parabrachial pigmented nucleus
+paralaminar nucleus
+paralmainar nucleus
+paralmainar nucleus glomerular part
+paramedian pontine reticular formation
+paranigral nucleus
+paratrigeminal nucleus
+paraventricular nucleus of the hypothalamus
+parietal lobe
+parvocellular part of the red nucleus
+parvocellular part of thered nucleus
+peripeduncular nucleus
+peritrigeminal nucleus
+periventricular nucleus of the hypothalamus preoptic part
+planum polare
+planum temporale
+pons
+pontine gamma nucleus
+pontine reticular formation
+pontine tegmentum
+pontine white matter tracts
+pontobulbar nucleus
+postcentral gyrus
+postcentral gyrus bank of the central sulcus
+postcentral gyrus bank of the posterior central sulcus
+postcentral gyrus inferior lateral aspect of gyrus
+postcentral gyrus superior lateral aspect of gyrus
+posterior commissure
+posterior lobe
+posterior lobe of the vermis
+precentral gyrus
+precentral gyrus bank of the central sulcus
+precentral gyrus bank of the precentral sulcus
+precentral gyrus inferior lateral aspect of gyrus
+precentral gyrus superior lateral aspect of gyrus
+precuneus
+precuneus inferior lateral bank of gyrus
+precuneus superior lateral bank of gyrus
+preoptic region
+pretectal region
+principal pretectal nucleus
+principal sensory nucleus of trigeminal nerve
+putamen
+pyramidal decussation
+pyramidal tract
+raphe nuclei of medulla
+red nucleus
+reticular nucleus of thalamus
+reticulotegmental nucleus
+rostral thalamic peduncle
+sagittal stratum
+sagulum nucleus
+septal nuclei
+short insular gyri
+solitary nucleus
+solitary nucleus commissural subnucleus
+solitary nucleus dorsal subnucleus
+solitary nucleus dorsolateral subnucleus
+solitary nucleus gelantinosus subnucleus
+solitary nucleus intermediate subnucleus
+solitary nucleus interstitial subnucleus
+solitary nucleus meidal subnucleus
+solitary nucleus paracommissural part
+solitary nucleus ventral subnucleus
+solitary tract
+spinal lemniscus in hindbrain
+spinal trigeminal nucleus
+spinal trigeminal tract
+stratum lemnisci of the superior colliculus
+stratum zonale of thalamus
+stria terminalis
+striatum
+subcallosal fasciculus
+subcommissural organ
+sublentiform nucleus
+subparaventricular zone
+substantia innominata
+sulci & spaces
+superficial gray layer of the superior colliculus
+superficial presubicular path
+superficial white layer of the superior colliculus
+superior colliculus
+superior frontal gyrus
+superior frontal gyrus lateral bank of gyrus
+superior frontal gyrus medial bank of gyrus
+superior occipital gyrus
+superior occipital gyrus inferior bank of gyrus
+superior occipital gyrus superior bank of gyrus
+superior olivary complex
+superior olive
+superior paraolivary nucleus
+superior temporal gyrus
+superior temporal gyrus inferior bank of gyrus
+superior temporal gyrus lateral bank of gyrus
+superior vestibular nucleus
+suprachiasmatic nucleus
+suprachiasmatic nucleus dorsomedial part
+suprachiasmatic nucleus ventrolateral part
+supramammillary nucleus
+supramammillary nucleus medial part
+supramarginal gyrus
+supramarginal gyrus inferior bank of gyrus
+supramarginal gyrus superior bank of gyrus
+supraoptic dicussation
+supraoptic nucleus
+supraoptic nucleus dorsolateral part
+supraoptic nucleus ventromedial part
+tapetum of corpus callosum
+tectospinal tract
+telencephalic commissures
+telencephalic white matter
+telencephalic white matter tracts
+telencephalon
+temporal lobe
+temporal pole
+temporal pole inferior aspect
+temporal pole medial aspect
+temporal pole superior aspect
+thalamic fasciculus
+thalamus
+third ventricle
+trapezoid body
+trigeminal nuclei
+trochlear nucleus
+tuberal region
+tuberomammillary nucleus
+tuberomammillary nucleus principle part
+uncinate nucleus
+v
+v lateral hemisphere
+v paravermis
+ventral nucleus of lateral lemniscus
+ventral tegmental area
+ventral tegmental nucleus
+ventral thalamus
+ventricles
+ventrolateral subnucleus of solitary tract
+vermis
+vestibular nuclei
+vestibulomesencephalic tract
+vi
+vi lateral hemisphere
+vi paravermis
+viiaf
+viiat
+viib
+viib lateral hemisphere
+viib paravermis
+viiia
+viiia lateral hemisphere
+viiia paravermis
+viiib
+viiib lateral hemisphere
+viiib paravermis
+white matter
+x
+x lateral hemisphere
+x paravermis
+zona incerta
