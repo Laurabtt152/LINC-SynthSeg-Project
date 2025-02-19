@@ -1,1 +1,3 @@
 # LINC-Project
+
+My SynthSeg project focuses on improving brain MRI segmentation for high-resolution ex vivo scans by retraining the SynthSeg deep learning model using data from the NextBrain atlas. While SynthSeg performs well on standard in vivo MRI scans (~1mm resolution), it struggles with the greater anatomical variability in high-resolution datasets. NextBrain, a histology-based brain atlas with 200 µm resolution and 300+ anatomical regions, provides a more detailed anatomical reference. My goal is to leverage NextBrain-generated segmentations to train a new SynthSeg model that enhances segmentation accuracy for both high-resolution ex vivo and low-resolution in vivo MRI scans. 
