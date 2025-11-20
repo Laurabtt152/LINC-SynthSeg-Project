@@ -189,6 +189,12 @@ class SynthSegd(MapTransform, RandomizableTransform):
         synth = cc.SynthFromLabelTransform(**self.params, patch=self.patch_size)
         image, label = synth(label)
 
+        # mid = [s // 2 for s in label.shape[-3:]]
+        # slicer = (slice(m - ps // 2, m + (ps + 1) // 2) for m, ps in zip(mid, self.patch_size))
+        # slicer = (...,) + tuple(slicer)
+        # label = label[slicer]
+        # image = label.clone().float()
+
         d[self.key_image] = MetaTensor(image)
         if meta is not None:
             d[self.key_image].copy_meta_from(meta)

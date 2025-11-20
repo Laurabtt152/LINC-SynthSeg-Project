@@ -31,13 +31,13 @@ gpu_handle = nvidia_smi.nvmlDeviceGetHandleByIndex(0)
 # -------------------------
 # Paths & settings
 # -------------------------
-dir_input = "./training_label_maps"   # offline-remapped NextBrain labels (.nii.gz)
+dir_input = "./training_labels"   # offline-remapped NextBrain labels (.nii.gz)
 dir_results = "./results"
 batch_size = 1
 total_steps = 400000
-validation_steps = 2000
+validation_steps = 50
 spatial_size = None  # e.g., (256,)*3; None → no resize
-patch_size = None    # e.g., (128,)*3; None → full volume
+patch_size = (128,) * 3    # e.g., (128,)*3; None → full volume
 os.makedirs(dir_results, exist_ok=True)
 pth_checkpoint      = os.path.join(dir_results, 'checkpoint.pkl')
 pth_checkpoint_prev = os.path.join(dir_results, 'checkpoint_prev.pkl')
@@ -46,16 +46,20 @@ device = torch.device("cuda:0")
 # -------------------------
 # DDP setup
 # -------------------------
-if "LOCAL_RANK" in os.environ:
-    ddp = True
-    local_rank = int(os.environ["LOCAL_RANK"])
-    dist.init_process_group(backend="nccl", init_method="env://")
-    device = torch.device(f"cuda:{local_rank}")
-    num_gpus = dist.get_world_size()
+if device != torch.device("cpu"):
+    if "LOCAL_RANK" in os.environ:
+        ddp = True
+        local_rank = int(os.environ["LOCAL_RANK"])
+        dist.init_process_group(backend="nccl", init_method="env://")
+        device = torch.device(f"cuda:{local_rank}")
+        num_gpus = dist.get_world_size()
+    else:
+        ddp = False
+        num_gpus = 1
+    torch.cuda.set_device(device)
 else:
     ddp = False
     num_gpus = 1
-torch.cuda.set_device(device)
 
 # -------------------------
 # Data listing
@@ -75,19 +79,19 @@ if ddp:
 # -------------------------
 # Unified class space (BG..14)
 # -------------------------
-target_labels = list(range(15))  # 0..14 inclusive
-n_labels = len(target_labels) - 1  # foreground classes (without BG) for color convenience if needed
+target_labels = list(range(1, 15))  # 1..14 inclusive (do not include BG=0 !!!)
+n_labels = len(target_labels)       # foreground classes (without BG) for color convenience if needed
 
 # -------------------------
 # Transforms
 # -------------------------
 synth_params = utils.get_synth_params(target_labels, train=True)
-synth_params["device"] = "cpu"
+synth_params["device"] = device
 train_transforms = Compose([
     LoadImaged(keys="label"),
     EnsureChannelFirstd(keys="label"),
     Orientationd(keys="label", axcodes="RAS"),
-    transforms.MapLabelsSynthSeg(key_label="label"),  # <-- NextBrain mapping (no-op if already remapped)
+    # transforms.MapLabelsSynthSeg(key_label="label"),  # <-- NextBrain mapping (no-op if already remapped)
     transforms.ResizeTransform(keys=["label"], spatial_size=spatial_size, method="pad_crop"),
     EnsureTyped(keys="label", dtype=torch.int16, device="cpu"),
     transforms.SynthSegd(params=synth_params, patch_size=patch_size),
@@ -96,12 +100,12 @@ train_transforms = Compose([
 ])
 
 synth_params = utils.get_synth_params(target_labels, train=False)
-synth_params["device"] = "cpu"
+synth_params["device"] = device
 val_transforms = Compose([
     LoadImaged(keys="label"),
     EnsureChannelFirstd(keys="label"),
     Orientationd(keys="label", axcodes="RAS"),
-    transforms.MapLabelsSynthSeg(key_label="label"),
+    # transforms.MapLabelsSynthSeg(key_label="label"),
     transforms.ResizeTransform(keys=["label"], spatial_size=spatial_size, method="pad_crop"),
     EnsureTyped(keys="label", dtype=torch.int16, device="cpu"),
     transforms.SynthSegd(params=synth_params, patch_size=patch_size),
@@ -112,11 +116,11 @@ val_transforms = Compose([
 # Dataloaders
 # -------------------------
 train_loader = DataLoader(
-    CacheDataset(data=train_files, transform=train_transforms, cache_rate=1.0),
+    CacheDataset(data=train_files, transform=train_transforms, cache_rate=0.0),
     batch_size=batch_size, shuffle=True,
 )
 val_loader = DataLoader(
-    CacheDataset(data=val_files, transform=val_transforms, cache_rate=1.0),
+    CacheDataset(data=val_files, transform=val_transforms, cache_rate=0.0),
     batch_size=1, shuffle=False,
 )
 epochs = max(1, total_steps // max(1, num_train))
@@ -124,7 +128,7 @@ epochs = max(1, total_steps // max(1, num_train))
 # -------------------------
 # Model / loss / optim
 # -------------------------
-out_channels = 15  # BG + 14 foreground
+out_channels = n_labels + 1  # BG + 14 foreground
 model = utils.get_model(out_channels).to(device)
 loss_function = DiceLoss(
     to_onehot_y=True, softmax=True, include_background=True,

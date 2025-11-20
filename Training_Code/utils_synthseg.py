@@ -19,7 +19,7 @@ def extract_slice(dat, dim=2, mid_ix=None):
     if len(dat.shape) == 2:  return dat
     dat = dat.as_tensor()
     mid = (0.5*torch.as_tensor(dat.shape[-3:])).round().type(torch.int)
-    if mid_ix is not None: mid = mid_ix   
+    if mid_ix is not None: mid = mid_ix
     if dim == 0: dat = dat[..., mid[0], :, :]
     if dim == 1: dat = dat[..., :, mid[1], :]
     if dim == 2: dat = dat[..., :, :, mid[2]]
@@ -35,7 +35,7 @@ def get_label_cmap(n_labels):
     bin_edges = np.concatenate([unique_values - 0.5, [unique_values[-1] + 0.5]])
     # Create a BoundaryNorm to map unique values to indices in the colormap
     norm = BoundaryNorm(bin_edges, cmap.N, clip=True)
-    
+
     return cmap, norm
 
 def get_model(out_channels):
@@ -54,13 +54,14 @@ def get_model(out_channels):
     return model
 
 def get_synth_params(target_labels, train=True):
-    """Get SynthSeg parameters for train or val.       
+    """Get SynthSeg parameters for train or val.
     """
     if train:
         # Training
-        synth_params = {   
-            "target_labels": target_labels, 
-            "elastic_steps": 8,    
+        synth_params = {
+            "target_labels": target_labels,
+            "elastic_steps": 8,
+            "translations": 0.1,
             "rotation": 15,
             "shears": 0.012,
             "zooms": 0.15,
@@ -74,13 +75,13 @@ def get_synth_params(target_labels, train=True):
             "snr": 10,
             "gfactor": 5,
             "bound": "zeros",
-            "translations": 0.1,
-        }        
+            "order": 1,
+        }
     else:
         # Validation
-        synth_params = {    
-            "target_labels": target_labels, 
-            "elastic_steps": 8,    
+        synth_params = {
+            "target_labels": target_labels,
+            "elastic_steps": 8,
             "translations": 0,
             "rotation": 0,
             "shears": 0.0,
@@ -95,8 +96,8 @@ def get_synth_params(target_labels, train=True):
             "snr": 100,
             "gfactor": 2,
             "bound": "zeros",
-            "translations": 0,
-        }            
+            "order": 1,
+        }
     return synth_params
 
 def get_timestamp():
@@ -107,7 +108,7 @@ def get_timestamp():
 
 def inference(inputs, model, patch_size=None):
     """Run pytorch inference, either full image of sliding window.
-    """   
+    """
     with torch.autocast("cuda", dtype=torch.bfloat16):
         if patch_size is not None:
             return sliding_window_inference(
@@ -119,7 +120,7 @@ def inference(inputs, model, patch_size=None):
             )
         else:
             return model(inputs)
-    
+
 def plot_loss_and_metric(axs, loss_values, metric_values, validation_epoch):
     """Plots training loss and metric
     """
